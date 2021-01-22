@@ -148,8 +148,7 @@ export default {
   width: 100%;
   background-color: var(--themeColor);
 }
-.mask {
-}
+
 .maskhidden {
   display: none;
 }
