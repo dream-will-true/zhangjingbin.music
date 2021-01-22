@@ -7,6 +7,7 @@
     <div class="music-header-right">
         <input type="text" @keydown.enter='handlerSave'
       placeholder="请输入歌曲名字或者关键字"   v-model="inputVal" name="" id="">
+      <button @click="handlerSave">Go</button>
     </div>
 </div>
 </template>
@@ -99,6 +100,18 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
         text-indent: 15px;
 
 
+    }
+    button{
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 30px;
+        width: 70px;
+        height: 30px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #feae1b;
     }
   }
 }
