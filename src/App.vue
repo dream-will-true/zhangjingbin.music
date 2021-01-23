@@ -22,7 +22,8 @@
       </div>
     </div>
     <div :class="['mask', { maskhidden: hiddenvideo }]">
-      <div class="closemv" @click.stop="closemv">x</div>
+      <div class="closemv" ><button @click.stop="closemv">X</button>
+      </div>
       <div class="app-player-vedio">
         <video
           ref="video"
@@ -115,6 +116,7 @@ export default {
   box-sizing: border-box;
 }
 #app {
+  position: relative;
   overflow: hidden;
   background: url(./assets/bg.jpg) no-repeat;
   background-size: 100% 100%;
@@ -153,12 +155,21 @@ export default {
   display: none;
 }
 .closemv {
-  position: fixed;
-  right: 4%;
-  top: 4%;
+  position:absolute;
+  right: 8%;
+  top: 8%;
   z-index: 999;
-  color: #fff;
+ 
   cursor: pointer;
+}
+.closemv button{
+  font-size: 25px;
+  background-color: rgb(190, 14, 14);
+  width:46px;
+  height: 32px;
+  line-height: 25px;
+   color: #fff;
+   text-align: center;
 }
 video {
   width: 100%;
@@ -167,7 +178,7 @@ video {
 }
 .app-player-vedio {
   transform: translate(-50%, -50%);
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 50%;
   width: 700px;
@@ -176,11 +187,12 @@ video {
   background-color: #000;
 }
 .app-mask {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  min-width: 1320px;
+  /* width: 100vw; */
+  /* min-width: 1320px; */
+  width: 1320px;
   height: 100vh;
   min-width: 620px;
   background-color: #000;

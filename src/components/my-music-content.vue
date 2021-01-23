@@ -15,7 +15,7 @@
                 'list-item-right',
                 { hidden: item.mvid == 0 ? true : false },
               ]"
-              @dblclick="lookmv(item.mvid)"></div>
+              @click="lookmv(item.mvid)"></div>
           </div>
         </div>
       </div>
