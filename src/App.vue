@@ -118,7 +118,8 @@ export default {
 #app {
   position: relative;
   overflow: hidden;
-  background: url(./assets/bg.jpg) no-repeat;
+  background: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4074572964,3410444452&fm=26&gp=0.jpg) no-repeat;
+  /* background: url(./assets/bg.jpg) no-repeat; */
   background-size: 100% 100%;
   display: flex;
   text-align: center;
@@ -192,7 +193,7 @@ video {
   left: 0;
   /* width: 100vw; */
   /* min-width: 1320px; */
-  width: 1320px;
+  width: 1520px;
   height: 100vh;
   min-width: 620px;
   background-color: #000;

@@ -2,7 +2,7 @@
 <template>
 <div class='music-header'>
     <div class="music-header-left">
-    zhangjingbin的音乐盒
+    白嫖音乐盒
     </div>
     <div class="music-header-right">
         <input type="text" @keydown.enter='handlerSave'

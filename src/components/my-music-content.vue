@@ -146,6 +146,7 @@ export default {
           },
         })
         .then((res) => {
+          console.log(res)
           this.picurl = res.data.songs[0].al.picUrl;
         });
     },
