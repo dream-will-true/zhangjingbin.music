@@ -95,6 +95,7 @@ export default {
       isAutoPlaying: false,
       hotcommment: [],
       picurl: "",
+      songer:''
     };
   },
   //监听属性 类似于data概念
@@ -123,6 +124,7 @@ export default {
           },
         })
         .then((res) => {
+          
           let songUrl = res.data.data[0].url;
           this.$emit("getsong", songUrl);
         });
@@ -146,8 +148,9 @@ export default {
           },
         })
         .then((res) => {
-          console.log(res)
+
           this.picurl = res.data.songs[0].al.picUrl;
+           this.songer = res.data.songs[0].ar[0].name;
         });
     },
   },

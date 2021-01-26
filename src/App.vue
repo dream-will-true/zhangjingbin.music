@@ -55,9 +55,11 @@ export default {
       .get("https://apimusic.linweiqin.com/search", {
         params: {
           keywords: "热门",
+          limit:100
         }
       })
       .then((res) => {
+        console.log(res)
        this.starmusic=res.data.result.songs
       });
   },
