@@ -18,6 +18,7 @@
           :sendsong="songurl"
           @pausekey="handlepause"
           @playkey="handleplay"
+          :songidlist="songidlist"
         ></music-fooer>
       </div>
     </div>
@@ -59,8 +60,16 @@ export default {
         }
       })
       .then((res) => {
-        console.log(res)
+      
        this.starmusic=res.data.result.songs
+       let  starmusic =res.data.result.songs
+       const songidlist=starmusic.map((item)=>{
+
+         return item.id
+
+       })
+       
+       this.songidlist=songidlist
       });
   },
   components: {
@@ -75,7 +84,8 @@ export default {
       mvurl: "",
       hiddenvideo: true,
       playingstatus: false,
-      starmusic:[]
+      starmusic:[],
+      songidlist:[]
     };
   },
 
