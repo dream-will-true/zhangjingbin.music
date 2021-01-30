@@ -109,7 +109,7 @@ export default {
   }
   button {
     position: absolute;
-
+    cursor: pointer;
     border: none;
     width: 60px;
     height: 28px;
@@ -120,14 +120,14 @@ export default {
     border-radius: 4px;
   }
   .sj {
-    top: 27px;
-    left: 449px;
+    top: 16px;
+    left: 190px;
     color: #fff;
     background-color: pink;
   }
   .danqu {
-    top: 27px;
-    left: 520px;
+    top: 16px;
+    left: 260px;
     color: red;
     background-color: yellowgreen;
   }

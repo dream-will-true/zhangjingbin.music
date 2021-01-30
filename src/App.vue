@@ -147,6 +147,7 @@ export default {
 .app-player {
   width: 800px;
   height: 600px;
+  position: relative;
   /* margin: 50px auto; */
 }
 .app-player .app-plalyer-header {
